@@ -1,0 +1,20 @@
+$layout-one-third-padding: 50px;
+
+.layout-one-third {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  > :nth-child(1) {
+    flex-basis: 33.33%;
+  }
+
+  > :nth-child(2) {
+    flex-basis: 66.67%;
+  }
+
+  &.has-padding-top {
+    padding-top: $layout-one-third-padding;
+    padding-bottom: $layout-one-third-padding;
+  }
+}

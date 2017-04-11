@@ -1,0 +1,21 @@
+// Imports
+@import '../../styles/mixins/breakpoint.scss';
+
+// Variables
+$breakpoint-medium: 800px;
+$breakpoint-large: 1200px;
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: calc(100% - 60px);
+
+  @include breakpoint($breakpoint-medium) {
+    width: calc(100% - 100px);
+  }
+
+  @include breakpoint($breakpoint-medium) {
+    width: 1150px;
+  }
+}

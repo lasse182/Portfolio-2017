@@ -1,0 +1,10 @@
+@import '../../styles/variables/colors.scss';
+
+.navigation-item {
+  text-decoration: none;
+  color: $color-black;
+  font-size: 18px;
+  height: 100%;
+  text-align: right;
+  margin-left: 35px;
+}

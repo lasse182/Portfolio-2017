@@ -9,7 +9,11 @@ import { syncHistoryWithStore } from 'react-router-redux';
 
 // Import components
 import App from './containers/App';
-import Main from './components/Main';
+import Main from './components/templates/Main';
+
+// Import global CSS
+import "normalize.css";
+import "./styles/shared.css";
 
 // Configuring redux store
 import configureStore from './store/configureStore';

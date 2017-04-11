@@ -1,0 +1,11 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: calc(100% - 60px); }
+  @media only screen and (min-width: 800px) {
+    .layout-container {
+      width: calc(100% - 100px); } }
+  @media only screen and (min-width: 800px) {
+    .layout-container {
+      width: 1150px; } }
