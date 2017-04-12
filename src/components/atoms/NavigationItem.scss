@@ -2,9 +2,16 @@
 
 .navigation-item {
   text-decoration: none;
-  color: $color-black;
-  font-size: 18px;
+  color: $color-dark;
+  font-size: 22px;
   height: 100%;
   text-align: right;
-  margin-left: 35px;
+  margin-left: 50px;
+  padding: 10px 0;
+  box-shadow: 0 2px 0 0 transparent;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 2px 0 0 $color-primary;
+  }
 }

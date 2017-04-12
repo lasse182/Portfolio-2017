@@ -1,0 +1,25 @@
+@import '../../styles/mixins/breakpoint.scss';
+
+.header {
+  font-size: 32px;
+  font-weight: 500;
+  height: 60vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 12.5%;
+
+  @include breakpoint(450px) {
+    font-size: 40px;
+  }
+
+  @include breakpoint(600px) {
+    font-size: 50px;
+  }
+
+  @include breakpoint(1200px) {
+    font-size: 60px;
+  }
+}

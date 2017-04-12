@@ -3,7 +3,7 @@
 
 // Variables
 $breakpoint-medium: 800px;
-$breakpoint-large: 1200px;
+$breakpoint-large: 1400px;
 
 .layout-container {
   display: flex;
@@ -15,7 +15,7 @@ $breakpoint-large: 1200px;
     width: calc(100% - 100px);
   }
 
-  @include breakpoint($breakpoint-medium) {
-    width: 1150px;
+  @include breakpoint($breakpoint-large) {
+    width: 1350px;
   }
 }

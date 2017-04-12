@@ -23,3 +23,5 @@ yarn-error.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Remove css files - only sass files will need to be comitted
+src/**/*.css

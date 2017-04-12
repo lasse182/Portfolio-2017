@@ -1,14 +1,25 @@
+@import '../../styles/mixins/layout.scss';
+
+$layout-halfs-padding: 50px;
+
 .layout-halfs {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
 
-  > div:nth-child(1) {
-    background-color: red;
-    flex-basis: 50%;
+  > :nth-child(1) {
+    width: 50%;
   }
 
-  > div:nth-child(2) {
-    background-color: blue;
-    flex-basis: 50%;
+  > :nth-child(2) {
+    width: 50%;
+  }
+
+  &.has-padding-top {
+    padding-top: $layout-halfs-padding;
+  }
+
+  &.has-padding-bottom {
+    padding-bottom: $layout-halfs-padding;
   }
 }

@@ -1,0 +1,57 @@
+@import '../../styles/variables/fonts.scss';
+@import '../../styles/mixins/breakpoint.scss';
+
+$project-preview-breakpoint: 1200px;
+$project-preview-breakpoint-small: 800px;
+
+.project-preview {
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  cursor: pointer;
+
+  @include breakpoint($project-preview-breakpoint) {
+    background-size: contain;
+  }
+
+  &--wrapper {
+    height: 500px;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint($project-preview-breakpoint) {
+      background-color: transparent !important;
+    }
+  }
+
+  &--info {
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    @include breakpoint($project-preview-breakpoint-small) {
+      padding-left: 50px;
+    }
+
+    @include breakpoint($project-preview-breakpoint) {
+      padding-left: 50px;
+      padding-right: 0;
+      width: 35%;
+    }
+  }
+
+  h2 {
+    font-family: $font-body;
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  p {
+    opacity: 0.75;
+    color: #fff;
+    line-height: 1.5;
+  }
+}

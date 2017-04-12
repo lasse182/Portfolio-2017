@@ -1,0 +1,37 @@
+@import '../../styles/mixins/breakpoint.scss';
+
+$layout-mixed-grid-breakpoint: 1200px;
+
+.layout-mixed-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  > div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  @include breakpoint($layout-mixed-grid-breakpoint) {
+    > div {
+      flex-basis: calc(50% - 25px);
+      margin-right: 25px;
+    }
+
+    > div:nth-child(3n) {
+      margin-left: 25px;
+      margin-right: 0;
+    }
+
+    > div:nth-child(3n+2) {
+      margin-right: 25px;
+      margin-left: 0;
+    }
+
+    > div:nth-child(3n+1) {
+      flex-basis: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,6 +1,8 @@
-@import './fonts.scss';
+@import './variables/fonts.scss';
+@import './variables/colors.scss';
 
 body {
+  color: $color-dark;
   font-family: $font-body;
   margin: 0;
 }
@@ -11,6 +13,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: $color-dark;
   font-family: $font-headings;
   font-weight: 600;
 }

@@ -1,9 +1,12 @@
 .layout-halfs {
   display: flex;
-  justify-content: space-between; }
-  .layout-halfs > div:nth-child(1) {
-    background-color: red;
-    flex-basis: 50%; }
-  .layout-halfs > div:nth-child(2) {
-    background-color: blue;
-    flex-basis: 50%; }
+  flex-wrap: nowrap;
+  align-items: center; }
+  .layout-halfs > :nth-child(1) {
+    width: 50%; }
+  .layout-halfs > :nth-child(2) {
+    width: 50%; }
+  .layout-halfs.has-padding-top {
+    padding-top: 50px; }
+  .layout-halfs.has-padding-bottom {
+    padding-bottom: 50px; }

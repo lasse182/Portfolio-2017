@@ -1,7 +1,50 @@
+// Imports
+@import '../../styles/mixins/breakpoint.scss';
+@import '../../styles/variables/colors.scss';
+
+// Variables
+$navigation-mobile-color: $color-dark;
+$navigation-breakpoint: 600px;
+
 .navigation {
-  display: flex;
-  justify-content: flex-end;
   width: 100%;
   height: 100%;
-  flex-wrap: nowrap;
+
+  &--desktop {
+    display: none;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+
+    @include breakpoint($navigation-breakpoint) {
+      display: flex;
+    }
+  }
+
+  &--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @include breakpoint($navigation-breakpoint) {
+      display: none;
+    }
+  }
+
+  &--mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      background-color: $navigation-mobile-color;
+      height: 2px;
+      width: 20px;
+      margin-top: 4px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
 }

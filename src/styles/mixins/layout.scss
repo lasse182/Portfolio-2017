@@ -1,0 +1,13 @@
+@import './breakpoint.scss';
+
+$spacing-mobile: 20px;
+$spacing-desktop: 100px;
+$breakpoint-desktop: 600px;
+
+@mixin layout-padding($position) {
+  padding-#{$position}: $spacing-mobile;
+
+  @include breakpoint($breakpoint-desktop) {
+    padding-#{$position}: $spacing-desktop;
+  }
+}
